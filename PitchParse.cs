@@ -40,12 +40,15 @@ namespace PitchParse
                 bool ankiMode = settingsScan[7].ElementAt(settingsScan[7].Length - 2) == 'Y';
                 settingsScan[8] = settingsScan[8].Replace('、', ',');
                 settingsScan[8] = settingsScan[8].Substring(0, settingsScan[8].Length - 1);
-                HashSet<string> fields = settingsScan[8].Substring(settingsScan[8].IndexOf(':') + 2).Split(',').ToHashSet();
+                HashSet<string> fields = settingsScan[8].Substring(settingsScan[8].IndexOf(':') + 2).Split(',').Where(field => !string.IsNullOrEmpty(field)).ToHashSet();
 
                 bool freqOnly = settingsScan[11].ElementAt(settingsScan[11].Length - 2) == 'Y';
                 bool ignoreFreqs = settingsScan[12].ElementAt(settingsScan[12].Length - 2) == 'Y';
                 if (fields.Count == 0 && !(freqOnly || ignoreFreqs))
-                    Console.WriteLine("No fields to be scanned were added! Make sure to add them if you're scanning from an Anki collection!");
+                {
+                    Console.WriteLine("No fields to scan added, forcing frequency only mode");
+                    freqOnly = true;
+                }
                 bool showFrequency = settingsScan[13].ElementAt(settingsScan[13].Length - 2) == 'Y';
                 bool checkReadings = settingsScan[14].ElementAt(settingsScan[14].Length - 2) == 'Y';
                 int maxFrequency = 30000;
