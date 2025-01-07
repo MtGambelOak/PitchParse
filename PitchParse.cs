@@ -78,9 +78,9 @@ namespace PitchParse
                 // verbs and adjectives also are scanned for their possible conjugations
                 // For each card, performs probably close to a million linear searches. So it takes a very long time, only need to do it once though
                 List<char> endings = new List<char>() { 'る', 'す', 'く', 'ぐ', 'ぶ', 'つ', 'む', 'う', 'ぬ' };
-                if (!File.Exists("Inputs/words.txt") && !freqOnly)
+                if (!freqOnly && File.GetLastWriteTime("Inputs/cards.txt") > File.GetLastWriteTime("Inputs/words.txt"))
                 {
-                    Console.WriteLine("words.txt not found, finding words now...");
+                    Console.WriteLine("words.txt not found or is older than cards.txt, finding words now...");
                     if (File.Exists("Inputs/cards.txt"))
                     {
                         string read = File.ReadAllText("Inputs/" + accentTarget);
