@@ -8,6 +8,14 @@ While certainly not a silver bullet in regards to pitch accent, it is designed t
 As always, a tool like this should be supplemented with heavy immersion to see any real effects.
 
 
+An excerpt from the *NHK 日本語発音アクセント新辞典, (付録 p. 14)*:
+
+> 日本語を話す人は、それぞれの単語のアクセントを、なんの手がかりもなく一語一語すべてゼロから記憶しているわけではない。  それがどんなことばであるかによってある程度の「傾向」があるものがあり、それを無意識に使用することによって、記憶量の節約を図っていると考えられる。  そして「傾向」に合わないことばを、「例外」として一語一語覚えているのである。  
+> つまり、こうした「傾向」を頭に入れておくと、「例外」だけを覚えていけばいいので、アクセントを習得するのが楽になる。
+
+
+
+
 # Tutorial
 
 A full and in-depth tutorial on the program will be released on Youtube in the near future, when time allows me to record and edit it.
