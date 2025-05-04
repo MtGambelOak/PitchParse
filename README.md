@@ -13,6 +13,23 @@ An excerpt from the *NHK 日本語発音アクセント新辞典, (付録 p. 14)
 > 日本語を話す人は、それぞれの単語のアクセントを、なんの手がかりもなく一語一語すべてゼロから記憶しているわけではない。  それがどんなことばであるかによってある程度の「傾向」があるものがあり、それを無意識に使用することによって、記憶量の節約を図っていると考えられる。  そして「傾向」に合わないことばを、「例外」として一語一語覚えているのである。  
 > つまり、こうした「傾向」を頭に入れておくと、「例外」だけを覚えていけばいいので、アクセントを習得するのが楽になる。
 
+There are 3 things that make it worth learning the pitch accent of a word:
+1. It should be common in everyday speech
+2. It should be an exception to a common pattern/tendency
+3. If it is part of a minimal pair (or triplet etc) in regards to its pitch accent
+
+# A bit about the data used in this project:
+1. Used some pitch accent data from the [Kanjium Repository](https://github.com/mifunetoshiro/kanjium/blob/master/data/source_files/raw/accents.txt). According to the repo owner this data comes from "reliable sources" that are not listed to copyright reasons. The data here is mostly reliable, but sometimes inaccurate in my experience. It does contain information for words which have different accents based on their part of speech, which is nice.
+2. Forgot where I found this (it's been a while), but [アクセント辞典](https://drive.google.com/file/d/1lypBucHQJGNeTAOgEiR2he799iyOBiFl/view?usp=drive_link) has very wide coverage. I am not sure of its source however and have not used it  a ton, so I can't necessarily vouch for its reliability.
+3. Also forgot the (exact) source, but [NHK 2016](https://drive.google.com/file/d/1UZl02OwY3n2D1FSvmq7Bwf59GwAaxMW0/view?usp=drive_link)  contains data from the NHK Pitch Accent dictionary which is a very reliable and reputable source. It is however missing data for words that have different accents based on how they are being used in a sentence.
+4. To fix the above issue, I took more NHK data from [here](https://github.com/Ajatt-Tools/PitchAccent/blob/main/database/accent_dict/nhk_pronunciation.csv) and parsed the csv files into another dataset. It's been a while since I worked on it so I don't remember exactly why, but there was unfortunately inconsistent formatting within this csv so the data is a bit incomplete. It does however, include data for words that have different pitch based on the meaning! Ex: 背 (～が高い) 1,(～を向ける) 0 
+
+This data was then all combined with a "ranking" system, where words that had pitch dependent on meaning/part of speech were taken from data sets 1 and 4 first, then all words from 2 were added, then all words from 3, then 1, then 2 to finish out with large coverage.
+
+**An important thing to note is that this means that most words in the dataset have data pulled from NHK. NHK states at the start of the dictionary that the data it contains are pronunciations for a formal setting that an announcer could use, for example. Thus there may be "acceptable" pronunciations not contained in the data here.
+This also means that for certain words that have multiple acceptable pronunciations, I would just advise going with the easiest one rather than the "first" or "most common" one. If it's good enough for an announcer, it's good enough for you!**
+
+Frequency data is briefly discussed in quickstart section 3.
 
 
 
