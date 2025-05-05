@@ -37,7 +37,7 @@ Frequency data is briefly discussed in quickstart section 3.
 
 I will no longer be releasing a YouTube Tutorial, as I cannot get it to be streamlined and snappy enough. Instead follow this written tutorial (that will likely be more useful!): [Full Tutorial](tutorial.md)
 
-# Quickstart tutorial
+# Quickstart Tutorial
 
 1. Download PitchParse from the [releases](https://github.com/MtGambelOak/PitchParse/releases) section and unzip the file.
 2. Choose what pitch accent data file you would like to use. By default, `combinedAccents.txt` is already present in the inputs folder, and this is the reccomended data file as it's a combination of the most important data from four separate sources and gets the widest coverage. Swap it out with another from the [Accents folder](https://github.com/MtGambelOak/PitchParse/tree/master/Accents) if you want to use another data file.
