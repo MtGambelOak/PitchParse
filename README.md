@@ -35,7 +35,7 @@ Frequency data is briefly discussed in quickstart section 3.
 
 # Tutorial
 
-A full and in-depth tutorial on the program will be released on Youtube in the near future, when time allows me to record and edit it.
+I will no longer be releasing a YouTube Tutorial, as I cannot get it to be streamlined and snappy enough. Instead follow this written tutorial (that will likely be more useful!): [Full Tutorial](tutorial.md)
 
 # Quickstart tutorial
 
