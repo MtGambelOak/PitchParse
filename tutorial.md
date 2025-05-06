@@ -23,6 +23,8 @@ Lastly, a few words have different pitch accent based on what meaning they have 
 
 `背 せ (～が高い)1,(～を向ける)0 freq 3507`
 
+Lastly, note that the output is sometimes not always sorted perfectly. For example, words that are neither verbs nor adjectives may be included in `adjectives and verbs.txt`; currently it is not possible to filter these out perfectly.
+
 # Minimal Pairs
 At first glance, `minimal pairs.txt` may appear to be the "most important" file. After all, minimal pairs may cause confusion when pronounced with incorrect pitch; at least, this is what people often say. In reality, I think it's important to consider this quote from the Wikipedia page for Pitch Accent ([with this source](https://en.wikipedia.org/wiki/Japanese_pitch_accent#cite_note-34)):
 > In 2014, a study recording the electrical activity of the brain showed that native Japanese speakers mainly use context, rather than pitch accent information, to contrast between words that differ only in pitch.
@@ -61,4 +63,44 @@ Turning on Anki mode in the settings just like in the previous section, the outp
 
 Making it easier to add each group as a sentence to Yomitan.
 
+# I-Adjectives and Verbs
+Next, let's move onto `adjectives and verbs.txt`. Perhaps unsurprisingly, I-Adjectives are at the top of this file.
 
+Everything in this file is easy because accents on adjectives and verbs will always occur on the second to last mora, if they occur at all. Thus there are essentially only two possibilities we have to consider for each word.
+## I-Adjectives
+I-Adjectives are even easier; I won't cover their phonetic shift here, but regardless, there are very few accentless I-Adjectives to begin with. These can be memorized very easily with Anki. I might as well even list the only common ones right here:
+> ```
+>辛い つらい 0 freq 1166
+>軽い かるい 0 freq 1284
+>重い おもい 0 freq 1520
+>薄い うすい 0 freq 1786
+>赤い あかい 0 freq 1874
+>遠い とおい 0 freq 1878
+>固い かたい 0 freq 1944
+>暗い くらい 0 freq 2343
+>厚い あつい 0 freq 3407
+>丸い まるい 0 freq 4190
+> ```
+
+## Verbs
+**I think verbs are the most important words to learn the pitch accent of. Why?**
+Because in my opinion, they're relatively "low hanging fruit" that will have a huge impact on your spoken Japanese:
+
+ - Since they can only have two possible pitch accents, the possibilities you have to consider are less, making them easier to learn. There are about twice as many accented verbs as there are accentless, so memorizing the accentless verbs cuts down on the total by a factor of 3.
+ - There are comparatively less verbs below a given frequency cutoff in the output, but they're used almost as often as nouns in actual speech! i.e. only a bit above 1000 nouns appear in the default output, compared to many more in `1-4 mora nouns.txt`.
+ - All in all, this means only around 270 words need to be memorized to effectively "learn" the accents of all the verbs, as many can be pronounced both ways, and we don't need to include both transitive and intransitive versions of the same verbs!
+
+ Of course, conjugations can be a beast, so verbs aren't a total walk in the park. It should also be noted that *only* adding a few hundred accentless verbs to an Anki deck and calling it a day doesn't always work the best, as knowing that every verb is accentless within your reps means they aren't the most effective. I think it could even make sense to add an equal amount of downstep verbs to a deck; while this results in more cards, it definitely ensures you master the accents of verbs, which is super important.
+
+## Compound Verbs
+The vast majority of compound verbs are downstep verbs. As a matter of fact, there's so few exceptions, I might as well include all the reasonably common ones here:
+> ```
+>見付ける みつける 0 freq 982
+>出掛ける でかける 0 freq 1493
+>落ち着く おちつく 0 freq 1737
+>取り替える とりかえる 0 freq 7374
+>引き摺る ひきずる 0 freq 9112
+>見張る みはる 0 freq 11119
+>気取る きどる 0 freq 14473
+>真似る まねる 0 freq 14889
+> ```
