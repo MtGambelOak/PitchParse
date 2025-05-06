@@ -1,6 +1,7 @@
 
 # Tutorial
 This section is not intended to be a tutorial of how to get the project set up and running. Consult the [Quickstart Tutorial](README.md#quickstart-tutorial) to get things started.
+**Note that I am not a pitch accent expert! Many statements I got from sources such as the NHK Pitch Accent Dictionary or otherwhere on the internet, or are quantitative patterns I am seeing in the data. I am not guaranteed to be remembering or communicating information perfectly accurately**
 
 Rather, this is going to be more of a tutorial of how I suggest the project is used, i.e. how to actually learn pitch accents with PitchParse.
 
@@ -139,7 +140,7 @@ Naturally, there are not many patterns as a result. Do whatever you wish with th
 ## "Multiple Word Nouns"
 Oh, you thought we were done with the complicated stuff after talking about *regular* compound nouns?
 
-Perhaps a better name for this section would be phrasal nouns. Simply put, certain nouns can have multiple pitch accents at different locations within the "word", as if they were made up of two separate words part of the same phrase. More can be found on the Wikipedia page on Pitch Accent, in the section "Compoundified compound nouns vs noncompoundified compound nouns".
+Perhaps a better name for this section would be phrasal nouns (I am not sure if they have an official name). Simply put, certain nouns can have multiple pitch accents at different locations within the "word", as if they were made up of two separate words part of the same phrase. More can be found on the Wikipedia page on Pitch Accent, in the section "Compoundified compound nouns vs noncompoundified compound nouns".
 
 Lines are displayed as such:
 
@@ -150,3 +151,28 @@ The boundary between the two words is shown by the `・` symbol in the reading. 
 For whatever reason, most of the frequency data does not contain these words very often (perhaps because they are parsed into individual words). Changing the setting `Get all words regardless of frequency or appearance in deck?` to `Y` is a way to get all of them to display, but there are a lot.
 
 Unfortunately, I do not know of any way to tell if a word is going to be a "regular" compound noun with one accent, or a noun like this with multiple! Even yojijukugo can be part of either category, and long compound nouns like `第一次世界大戦` can also be of either category. This is yet another thing to just be aware of and watch out for, but I wouldn't let it keep you up at night.
+
+
+# Hiragana & Katakana words
+`hiragana and katakana words.txt` contains exactly what you would expect.
+## Hiragana Words
+These are mostly just sorted together as there isn't necessarily another place to put them. However, there are a few patterns here to take into account.
+Specifically, [Onomatopoeia (擬音語) and Mimetic Words (擬態語)](https://onomatoproject.com/list.html) (which often are written in Hiragana only) seem to have patterns (that I've noticed, I have no official source for these being hard and fast rules).
+
+ - Reduplication words like `わくわく` have a downstep on the first mora. This sometimes depends on if they are being used as adverbs or adjectevial nouns: take `ふわふわ  (副)1,(形動)0` for example.
+ - I'm not sure if there is a term for these types of words, so I'll call them `り` onomatopoeia. These words always end with `り`, and if the word is four mora long, have a `っ` or `ん` for the second mora. Examples include `ばっちり`, `ぼんやり`, `にこり`.  The downstep is always on the second to last mora, but can also be on the last mora if it is a 3 mora long word. Words like `あんまり` may appear to be an exception, but I don't believe this word is an Onomatopoeia or Mimetic, so I'm not sure if this counts.
+
+There are likely even more patterns, as I have noticed something with `っと` words. But I'm not as confident these patterns exist, so I won't talk about them in depth here.
+
+A good amount of the outputted hiragana words fall under these categories, so all the ones that are not exceptions to these patterns can be ignored. Many remaining words are just hiragana only versions of other words that are included in the frequency/accent data for whatever reason, meaning those don't really need to be worried about here as well. In the end, mostly a few odd grammatical and miscellaneous words remain - I have not seen any patterns here, but there's few enough to make memorizing them easy.
+
+## Katakana Words
+This section might as well have been callen loanwords, as well, the vast majority of katakana words are just loanwords. In any case, there's mostly one thing to look out for in these words; most follow the "-3 rule", dictating the downstep is on the third to last mora, if there is one at all. Quite often, the third to last mora is a "special sound" that can't hold the accent however, so it's often pushed one more forward in the word making it even earlier! Words in the output that violate this rule should be tagged:
+
+`デジタル  1 irregular downstep  freq 2197`
+There are a lot of loanwords however, and so there are still a lot of exceptions. Really, it just depends on what words you think you're ever going to use in a conversation, and how often you want to use loanwords in the first place. Many of these words, even ones  reported as occurring somewhat frequently such as `フェスティバル`, have natural Japanese equivalents, and I'm a bit surprised the frequency data seems to favor so many of these words, as I don't recall hearing them often.
+
+There are comparatively few accentless words here, I think the important ones can be manually memorized fairly straightforwardly.
+
+Lastly, note that some words in the output will be flagged with `irregular ー pair`.
+This has to do with the fact that Dogen states many 3 mora katakana words ending with a long vowel have an accent on the second mora - but I found this to not often really be the case. I believe he may have meant that these kind of words are more likely to violate the -3 rule, rather than these kind of words *usually* being pronounced such a way. I included it just in case, but I would just ignore these flags.
