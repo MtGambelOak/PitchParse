@@ -18,20 +18,8 @@ There are 3 things that make it worth learning the pitch accent of a word:
 2. It should be an exception to a common pattern/tendency
 3. If it is part of a minimal pair (or triplet etc) in regards to its pitch accent
 
-# A bit about the data used in this project:
-1. Used some pitch accent data from the [Kanjium Repository](https://github.com/mifunetoshiro/kanjium/blob/master/data/source_files/raw/accents.txt). According to the repo owner this data comes from "reliable sources" that are not listed to copyright reasons. The data here is mostly reliable, but sometimes inaccurate in my experience. It does contain information for words which have different accents based on their part of speech, which is nice.
-2. Forgot where I found this (it's been a while), but [アクセント辞典](https://drive.google.com/file/d/1lypBucHQJGNeTAOgEiR2he799iyOBiFl/view?usp=drive_link) has very wide coverage. I am not sure of its source however and have not used it  a ton, so I can't necessarily vouch for its reliability.
-3. Also forgot the (exact) source, but [NHK 2016](https://drive.google.com/file/d/1UZl02OwY3n2D1FSvmq7Bwf59GwAaxMW0/view?usp=drive_link)  contains data from the NHK Pitch Accent dictionary which is a very reliable and reputable source. It is however missing data for words that have different accents based on how they are being used in a sentence.
-4. To fix the above issue, I took more NHK data from [here](https://github.com/Ajatt-Tools/PitchAccent/blob/main/database/accent_dict/nhk_pronunciation.csv) and parsed the csv files into another dataset. It's been a while since I worked on it so I don't remember exactly why, but there was unfortunately inconsistent formatting within this csv so the data is a bit incomplete. It does however, include data for words that have different pitch based on the meaning! Ex: 背 (～が高い) 1,(～を向ける) 0 
-
-This data was then all combined with a "ranking" system, where words that had pitch dependent on meaning/part of speech were taken from data sets 1 and 4 first, then all words from 2 were added, then all words from 3, then 1, then 2 to finish out with large coverage. I took this combined dataset and made a Yomitan compatible dictionary for it, I would recommend downloading and using it for consistency if using this tool! **(note that I was unable to fit all the information in the Yomitan dictionary format properly. Words with multiple accent cores are tagged as mlt, and words that differ pitch based on their meanings are tagged as def)**
-
-**An important thing to note is that this means that most words in the dataset have data pulled from NHK. NHK states at the start of the dictionary that the data it contains are pronunciations for a formal setting that an announcer could use, for example. Thus there may be "acceptable" pronunciations not contained in the data here.
-This also means that for certain words that have multiple acceptable pronunciations, I would just advise going with the easiest one rather than the "first" or "most common" one. If it's good enough for an announcer, it's good enough for you!**
-
-Frequency data is briefly discussed in quickstart section 3.
-
-
+# About the Data
+The data used in this project is important to discuss, more can be found [here](about_data.md).
 
 # Tutorial
 
@@ -42,7 +30,7 @@ Follow this for a full guide as to how to actually interpret and use the output:
 1. Download PitchParse from the [releases](https://github.com/MtGambelOak/PitchParse/releases) section and unzip the file.
 2. Choose what pitch accent data file you would like to use. By default, `combinedAccents.txt` is already present in the inputs folder, and this is the reccomended data file as it's a combination of the most important data from four separate sources and gets the widest coverage. Swap it out with another from the [Accents folder](https://github.com/MtGambelOak/PitchParse/tree/master/Accents) if you want to use another data file.
 > (optional) if planning to make Anki cards with the help of PitchParse, it is highly reccomended that you download the `combined_pitch_accents.zip` dictionary and install it to Yomitan so Anki cards have consistent accent data.
-3. Choose what frequency data files you would like to use. By default, 5 frequency data files are present in the frequency folder and are the 5 that contain reading data. Use any combination you like from the [Frequencies folder](https://github.com/MtGambelOak/PitchParse/tree/master/Frequencies), just know that ones without frequency data will not work as well and result in slightly more cluttered output. Frequency data files were modified from ones available in [MarvNC's Yomichan dictionaries repository](https://github.com/MarvNC/yomitan-dictionaries), more data on them can be found there.
+3. Choose what frequency data files you would like to use. By default, 5 frequency data files are present in the frequency folder and are the 5 that contain reading data. Use any combination you like from the [Frequencies folder](https://github.com/MtGambelOak/PitchParse/tree/master/Frequencies), just know that ones without reading data will not work as well and result in slightly more cluttered output. Frequency data files were modified from ones available in [MarvNC's Yomichan dictionaries repository](https://github.com/MarvNC/yomitan-dictionaries), more data on them can be found there.
 4. (optional) Get data from your Anki collection to filter outputs to only include words that appear in your collection. Download [this anki addon](https://ankiweb.net/shared/info/1758053224) and ouput all cards you want to scan to text and make sure the file is named `cards.txt`. In the settings file, make sure you enter which fields you want to scan with a space after the colon and separated by commas (no spaces). EXAMPLE:
 > ![image](https://github.com/user-attachments/assets/dab2f4ec-3a1f-42e7-9528-9cdf4ff0ad9e)
 5. Change the settings to your liking. By default the settings in `settings.txt` are set to the "reccomended" defaults. Full explanation of the settings can be found below or in the tutorial video. (Make sure you toggle the first two frequency settings off if you are reading from an Anki collection)
