@@ -104,3 +104,49 @@ The vast majority of compound verbs are downstep verbs. As a matter of fact, the
 >気取る きどる 0 freq 14473
 >真似る まねる 0 freq 14889
 > ```
+
+
+# Compound, Longer, & Miscellaneous Nouns
+Unfortunately, it's not exactly possible to filter out all compound nouns and separate them from other types of words. But currently, they can be identified semi-reliably.
+
+`long and compound nouns.txt` contains three sections. We will go through them individually
+
+## "Long Nouns"
+This section basically refers to nouns that have longer character and morae counts.  In the output, these are mostly compound nouns that are 3 characters long, such as words like `必要性`.
+
+When I was originally learning pitch accent from Dogen's patreon course, the advice he gives is to just assume all compound nouns are `中高`, with the downstep somewhere on the boundary between the two words getting combined. This advice is great and mostly true, but perhaps overly simplistic. It's been a while since I've read the NHK Accent Dictionary, so I may be misremembering some details here, but I believe they explain compound nouns as having pitch dependent on the suffix in the combination. They outline four different types of suffixes, and how they behave in regards to pitch:
+
+ - Downstep is in the same location of the suffix as a standalone word
+ - Downstep is right before the boundary
+ - Downstep is right after the boundary
+ - The resulting word has no downstep
+
+The first category I found to be quite rare. Furthermore, the first 3 will all result in `中高` compounds (with 2 and 3 only having a downstep difference by 1 mora!). I think it by far makes the most sense to memorize the suffixes that result in accentless compounds, and then treat everything else as having a downstep "somewhere around" the boundary of the two words rather than splitting hairs over the countless suffixes that exist. I made a list of all of these suffixes, and a corresponding Anki deck as well using example words with the suffixes.
+
+So just memorize this list and we're done? Alas, life is never that simple. There are two (perhaps major) caveats I must mention:
+1. Many suffixes can be either "accentless" suffixes or "downstep" suffixes. They can be one or the other arbitrarily, or depending on the word they are attaching to, or the specific meaning they are adding as a suffix. I think there are too many of these to necessarily worry about, so I only included suffixes that **always** result in accentless compounds in the aforementioned list. If you do want to worry about this, check out the NHK Accent Dictionary.
+2. The morphology of the compound nouns determines what the suffix is! For example, take the word `新幹線`. The suffix `線` typically makes compounds accentless as a suffix, so why is the resulting word not accentless? The reason why is because the word is the result of `新`+`幹線`, NOT `新幹`+`線` - so the suffix actually `幹線`, and full on words like this are not really ever going to be accentless suffixes. So even words that seem to end with an accentless suffix may not actually be accentless, depending on the morphology of the word!
+
+The second caveat seems like a horribly complicated exception to always keep in mind, and in some senses, it definitely is. But I think in practice, not only does it get easier with practice, but it actually ends up being very helpful! Longer compound nouns like `白人男性` almost always have a full on word such as `男性` as the suffix, so you already know the resulting word will have a downstep near the boundary, without needing to know anything about the last character in the word.
+
+## "Miscellaneous Nouns"
+This part of the file basically includes all nouns that were not fit into any other category. 
+
+As such, it aptly pretty much just contains lots of random words.
+
+Naturally, there are not many patterns as a result. Do whatever you wish with these words, I mostly just memorized whichever ones I thought were interesting from here.
+
+## "Multiple Word Nouns"
+Oh, you thought we were done with the complicated stuff after talking about *regular* compound nouns?
+
+Perhaps a better name for this section would be phrasal nouns. Simply put, certain nouns can have multiple pitch accents at different locations within the "word", as if they were made up of two separate words part of the same phrase. More can be found on the Wikipedia page on Pitch Accent, in the section "Compoundified compound nouns vs noncompoundified compound nouns".
+
+Lines are displayed as such:
+
+`万が一 まんが・いち 1・1 freq 6138`
+
+The boundary between the two words is shown by the `・` symbol in the reading. The two accents then, show where the downstep is in the respective words.
+
+For whatever reason, most of the frequency data does not contain these words very often (perhaps because they are parsed into individual words). Changing the setting `Get all words regardless of frequency or appearance in deck?` to `Y` is a way to get all of them to display, but there are a lot.
+
+Unfortunately, I do not know of any way to tell if a word is going to be a "regular" compound noun with one accent, or a noun like this with multiple! Even yojijukugo can be part of either category, and long compound nouns like `第一次世界大戦` can also be of either category. This is yet another thing to just be aware of and watch out for, but I wouldn't let it keep you up at night.
