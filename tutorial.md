@@ -5,6 +5,8 @@ This section is not intended to be a tutorial of how to get the project set up a
 
 Rather, this is going to be more of a tutorial of how I suggest the project is used, i.e. how to actually learn pitch accents with PitchParse.
 
+If you haven't read about the data used in the project, do so now! [About the data](about_data.md)
+
 # About the output
 Each line in the output will typically be a word, followed by its reading, its accent, and frequency information.
 
@@ -113,7 +115,7 @@ Unfortunately, it's not exactly possible to filter out all compound nouns and se
 `long and compound nouns.txt` contains three sections. We will go through them individually
 
 ## "Long Nouns"
-This section basically refers to nouns that have longer character and morae counts.  In the output, these are mostly compound nouns that are 3 characters long, such as words like `必要性`.
+This section basically refers to nouns that have longer character and mora counts.  In the output, these are mostly compound nouns that are 3 characters long, such as words like `必要性`.
 
 When I was originally learning pitch accent from Dogen's patreon course, the advice he gives is to just assume all compound nouns are `中高`, with the downstep somewhere on the boundary between the two words getting combined. This advice is great and mostly true, but perhaps overly simplistic. It's been a while since I've read the NHK Accent Dictionary, so I may be misremembering some details here, but I believe they explain compound nouns as having pitch dependent on the suffix in the combination. They outline four different types of suffixes, and how they behave in regards to pitch:
 
@@ -153,6 +155,19 @@ For whatever reason, most of the frequency data does not contain these words ver
 Unfortunately, I do not know of any way to tell if a word is going to be a "regular" compound noun with one accent, or a noun like this with multiple! Even yojijukugo can be part of either category, and long compound nouns like `第一次世界大戦` can also be of either category. This is yet another thing to just be aware of and watch out for, but I wouldn't let it keep you up at night.
 
 
+
+# 1-4 Mora Nouns
+This section will hopefully me more straightforward; but `1-4 mora nouns.txt` is by far the largest output file, so there are a lot more words to worry about!
+## 4 Mora Nouns
+For the most part, the majority of 4 mora nouns are going to be accentless. This pattern is stronger or weaker for certain classes of words; for example, one kanji nouns of Japanese origin such as `湖` often are *not* accentless, but there aren't very many of these words. But for the most part, this pattern does hold; around 80% of 4 mora nouns in the default output are accentless. Thus, memorizing the ones that aren't will be the most effective, though it should be noted there are still a fair amount of exceptions, as there are simply a *lot* of 4 mora nouns in Japanese! About half of the exceptions have an accent on the first mora, and the rest are mostly equally split between having a downstep on the second or third mora. *Very* few four mora nouns are `尾高`, with `妹` and `弟` being the only real exceptions.
+## 3 Mora Nouns
+Unfortunately, there is no overwhelming pattern that makes 3 mora nouns easy to learn.
+Very few have downsteps on the last or second to last mora; A bit over half are accentless, and around 40% have a downstep on the first mora, leaving less than 10% being `中高` and `尾高`. Memorizing these outliers means anything else is going to be `平板` or `頭高`, mostly just up to a guess with one being a bit more likely! I think it may make sense to still memorize the most common 3 mora words that are of these two categories, but getting them all is a lot. I might advise taking these on a word by word basis after picking off the "low hanging fruit".
+## 2 Mora Nouns
+There are only 3 possible accents a 2 mora noun can have. For the most part, they tend to have a downstep on the first mora, and are either accentless or have an accent on the last mora with about equal frequency. This tendency is even stronger if the word has 2 kanji; these words are almost always `頭高`. I would at least memorize the exceptions for 2 kanji words here, as there aren't as many. As for the rest, it's up to you; there are a lot to memorize.
+## 1 Mora Nouns
+There are not very many of these, and they can only have two possible accents. Memorizing the few accentless ones should be easy enough.
+
 # Hiragana & Katakana words
 `hiragana and katakana words.txt` contains exactly what you would expect.
 ## Hiragana Words
@@ -176,3 +191,4 @@ There are comparatively few accentless words here, I think the important ones ca
 
 Lastly, note that some words in the output will be flagged with `irregular ー pair`.
 This has to do with the fact that Dogen states many 3 mora katakana words ending with a long vowel have an accent on the second mora - but I found this to not often really be the case. I believe he may have meant that these kind of words are more likely to violate the -3 rule, rather than these kind of words *usually* being pronounced such a way. I included it just in case, but I would just ignore these flags.
+
