@@ -24,6 +24,7 @@ The data used in this project is important to discuss, more can be found [here](
 # Tutorial
 
 Follow this for a full guide as to how to actually interpret and use the output: [Full Tutorial](tutorial.md)
+I made some example decks (some are quite complete!) using this tool! Shared on [Anki Web](https://ankiweb.net/shared/by-author/1801041122).
 
 # Quickstart Tutorial
 
