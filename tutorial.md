@@ -218,6 +218,8 @@ A lot of patterns exist that we can exploit to learn pitch accent in a "more eff
 
 This would get the vast majority of "common" (below the frequency cutoff) verbs, compound nouns, hiragana nouns, loanwords, I-Adjectives, and 1 mora nouns, assuming the exceptions are remembered correctly.  Many exceptions for 4 mora nouns would "slip through the cracks", but the most important ones would be remembered, and simply "guessing" `平板` gives over 80% accuracy! The same goes for 3 and 2 mora nouns, though "guessing" is perhaps not as accurate for those. Basically, the only words you wouldn't know the pitch accent of are less common exception words that are 4-2 mora nouns, which I feel is not too bad for only having to go through 1000 cards! And adding another 1000 would greatly increase the accuracy on the weak spots.
 
+Reminder: I made some [example decks](https://ankiweb.net/shared/by-author/1801041122) shared on AnkiWeb!
+
 However, this is of course an idealized scenario. It's likely exceptions will not be remembered perfectly. In addition, only repping exceptions on Anki can cause a bad habit of "hallucinating" exceptions, since you're seeing them so often! It should hopefully be obvious that this approach alone will not give you perfect pitch accent. Heavy immersion, perhaps assisted by this approach, is a much better way to go.
 
 ## Accent Patterns Cheatsheet
