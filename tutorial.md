@@ -201,3 +201,34 @@ For example, take `育ち` deriving from `育つ`. My source for this section is
 If the original verb is accentless, the resulting noun is accentless. If the original verb is accented, the resulting noun has a downstep on the last mora, resulting in a `尾高` word. If the original verb was a compound verb, the resulting noun is often accentless regardless! (sometimes the output incorrectly flags these as exceptions, ignore that pls)
 
 The output of this file is a little unorganized and incorrectly picks up on some words that are not actually originating from a verb. Additionally, it can sometimes be difficult to actually remember and apply this rule; it predicates you know the accent of the original verb (which is sometimes much rarer than the noun itself), and some words are often not written with okurigana and as such I never even particularly thought of them as these types of words (ex `光`). But, some may find it useful. (This file can be toggled off in the settings!)
+
+
+
+# Conclusion and Final Cheatsheet
+
+A lot of patterns exist that we can exploit to learn pitch accent in a "more efficient" manner; following the guidelines in this tutorial, it's likely possible to create an Anki deck with ~1000 cards that will allow someone to still speak with very accurate pitch accent:
+
+ - Common verbs in ~300 cards
+ - Various misc nouns (hiragana and katakana words, suffixes, etc) in ~300 cards
+ - I-Adjectives in ~15 cards
+ - ~200 4 mora nouns 
+ - ~150 3 mora nouns
+ - ~100 2 mora nouns
+ - ~20 1 mora nouns
+
+This would get the vast majority of "common" (below the frequency cutoff) verbs, compound nouns, hiragana nouns, loanwords, I-Adjectives, and 1 mora nouns, assuming the exceptions are remembered correctly.  Many exceptions for 4 mora nouns would "slip through the cracks", but the most important ones would be remembered, and simply "guessing" `平板` gives over 80% accuracy! The same goes for 3 and 2 mora nouns, though "guessing" is perhaps not as accurate for those. Basically, the only words you wouldn't know the pitch accent of are less common exception words that are 4-2 mora nouns, which I feel is not too bad for only having to go through 1000 cards! And adding another 1000 would greatly increase the accuracy on the weak spots.
+
+However, this is of course an idealized scenario. It's likely exceptions will not be remembered perfectly. In addition, only repping exceptions on Anki can cause a bad habit of "hallucinating" exceptions, since you're seeing them so often! It should hopefully be obvious that this approach alone will not give you perfect pitch accent. Heavy immersion, perhaps assisted by this approach, is a much better way to go.
+
+## Accent Patterns Cheatsheet
+
+ - Around 2/3 of verbs are downstep verbs
+ - The vast majority of compound verbs are downstep verbs
+ - The vast majority of I-Adjectives are downstep adjectives
+ - The accent of compound nouns depends on the suffix. Most suffixes result in a word with a downstep somewhere in the middle of the word (near where the suffix connects), but a few result in an accentless word
+ - The morphology of compound nouns is important in determining the suffix and therefore the accent. Most compound nouns longer than 3 kanji/morphemes will have a downstep somewhere around the middle
+ - Some "compound nouns" actually have multiple downsteps as if they were individual words part of a phrase!
+ - The vast majority of 4 mora nouns are accentless
+ - The vast majority of 3 mora nouns have either no downstep, or a downstep on the first mora
+ - Most 2 mora nouns have a downstep on the first mora, especially if they have 2 kanji
+ - Most 1 mora nouns have a downstep after their lone mora
