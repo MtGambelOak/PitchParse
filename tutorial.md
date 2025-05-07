@@ -192,3 +192,12 @@ There are comparatively few accentless words here, I think the important ones ca
 Lastly, note that some words in the output will be flagged with `irregular ー pair`.
 This has to do with the fact that Dogen states many 3 mora katakana words ending with a long vowel have an accent on the second mora - but I found this to not often really be the case. I believe he may have meant that these kind of words are more likely to violate the -3 rule, rather than these kind of words *usually* being pronounced such a way. I included it just in case, but I would just ignore these flags.
 
+
+# "Stem Nouns"
+`stem nouns.txt` refers to nouns that originate from verb "stems" as I have always called them (I belive this is what Tae Kim calls the `~ます` conjugation for verbs). But I think the proper term  would be to call these "verbal nouns".
+
+For example, take `育ち` deriving from `育つ`. My source for this section is some Reddit comment I saw forever ago and can't find anymore, but this does seem to be an actual pattern:
+
+If the original verb is accentless, the resulting noun is accentless. If the original verb is accented, the resulting noun has a downstep on the last mora, resulting in a `尾高` word. If the original verb was a compound verb, the resulting noun is often accentless regardless! (sometimes the output incorrectly flags these as exceptions, ignore that pls)
+
+The output of this file is a little unorganized and incorrectly picks up on some words that are not actually originating from a verb. Additionally, it can sometimes be difficult to actually remember and apply this rule; it predicates you know the accent of the original verb (which is sometimes much rarer than the noun itself), and some words are often not written with okurigana and as such I never even particularly thought of them as these types of words (ex `光`). But, some may find it useful. (This file can be toggled off in the settings!)
