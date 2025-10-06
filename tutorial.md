@@ -90,7 +90,7 @@ I-Adjectives are even easier; I won't cover their phonetic shift here, but regar
 Because in my opinion, they're relatively "low hanging fruit" that will have a huge impact on your spoken Japanese:
 
  - Since they can only have two possible pitch accents, the possibilities you have to consider are less, making them easier to learn. There are about twice as many accented verbs as there are accentless, so memorizing the accentless verbs cuts down on the total by a factor of 3.
- - There are comparatively less verbs below a given frequency cutoff in the output, but they're used almost as often as nouns in actual speech! i.e. only a bit above 1000 nouns appear in the default output, compared to many more in `1-4 mora nouns.txt`.
+ - There are comparatively less verbs below a given frequency cutoff in the output, but they're used almost as often as nouns in actual speech! i.e. only a bit above 1000 verbs appear in the default output, compared to many more in `1-4 mora nouns.txt`.
  - All in all, this means only around 270 words need to be memorized to effectively "learn" the accents of all the verbs, as many can be pronounced both ways, and we don't need to include both transitive and intransitive versions of the same verbs!
 
  Of course, conjugations can be a beast, so verbs aren't a total walk in the park. It should also be noted that *only* adding a few hundred accentless verbs to an Anki deck and calling it a day doesn't always work the best, as knowing that every verb is accentless within your reps means they aren't the most effective. I think it could even make sense to add an equal amount of downstep verbs to a deck; while this results in more cards, it definitely ensures you master the accents of verbs, which is super important.
